@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>N:</strong>
+  <%= @my_rsa.n %>
+</p>
+
+<p>
+  <strong>D:</strong>
+  <%= @my_rsa.d %>
+</p>
+
+<p>
+  <strong>E:</strong>
+  <%= @my_rsa.e %>
+</p>
+
+<%= link_to 'Edit', edit_my_rsa_path(@my_rsa) %> |
+<%= link_to 'Back', my_rsas_path %>

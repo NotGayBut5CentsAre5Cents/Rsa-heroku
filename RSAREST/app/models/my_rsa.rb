@@ -1,0 +1,2 @@
+class MyRsa < ApplicationRecord
+end
