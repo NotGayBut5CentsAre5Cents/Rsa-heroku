@@ -21,6 +21,7 @@ class MyRsasController < ApplicationController
 
   # GET /my_rsas/new
   def new
+
     params_keys = [:n, :e, :d]
     if params_keys.all? {|c| params.has_key? c}
       rsa = MyRsa.new({n: params[:n], d: params[:d], e: params[:e]})
